@@ -17,7 +17,7 @@ class MainActivity : ComponentActivity() {
             Column(modifier = Modifier
                 .background(Color.Cyan)
                 .fillMaxSize(1f)){
-                Text("Hello World")
+                Text("I hope it will work")
             }
         }
     }
