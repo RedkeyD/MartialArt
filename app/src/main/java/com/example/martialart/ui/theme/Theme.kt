@@ -1,3 +1,5 @@
+package com.example.martialart.ui.theme
+
 import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -9,7 +11,6 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Color.Companion.Blue
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
@@ -29,6 +30,7 @@ private val LightColorScheme = lightColorScheme(
     onPrimary = Navy
 )
 
+@Suppress("DEPRECATION")
 @Composable
 fun BasicsCodelabTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
@@ -57,3 +59,4 @@ fun BasicsCodelabTheme(
         typography = Typography,
         content = content
     )
+}
